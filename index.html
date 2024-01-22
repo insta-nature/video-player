@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Video</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <figure class="video-container">
+        <!-- <button class='toggle-play material-icons' >play_arrow</button> -->
+        <video id="player">
+            <!-- <source src="aseets/video/jfe_aboutus_final.m3u8" type="video/mp4"> -->
+            <p>Your browser does not support HTML5 video.</p>
+        </video>
+    
+        <div class="controls">
+            <button class='toggle-play-pause material-icons' >play_arrow</button>
+    
+            <div class="timestamp">Loading...</div>
+    
+            <div class="progress-bar-container">
+                <div class="buffered-amount-bar"></div>
+                <div class="current-progress-bar"></div>
+            </div>
+    
+            <div class="volume-container">
+                <button class="toggle-volume material-icons">volume_up</button>
+                <div class="volume-slider">
+                    <div class="drag-line">
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+    
+            <button class="toggle-airplay material-icons">airplay</button>
+            <button class="toggle-chromecast material-icons">cast</button>
+            <button class="toggle-picture-in-picture material-icons">picture_in_picture</button>
+            <button class="toggle-fullscreen material-icons">fullscreen</button>
+        </div>
+    </figure>
+    <script src="video.min.js"></script>
+    <script src="vid.js"></script>
+    <!-- <script src="test.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.1/dist/hls.min.js"></script>
+    <script src="https://cdn.plyr.io/3.7.2/plyr.js"></script>
+    <!-- <script src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js"></script> -->
+</body>
+</html>
